@@ -42,7 +42,7 @@ ol {
   gap: 30px;
   max-height: 534px;
   max-width: 1140px;
-  margin: 135px auto;
+  margin: 135px 30px;
 }
 .result {
  min-width: 711px; 
