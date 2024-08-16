@@ -42,11 +42,12 @@ ol {
   gap: 30px;
   max-height: 534px;
   max-width: 1140px;
-  margin: 135px 30px;
+  margin: 110px 30px;
 }
+
 .result {
  min-width: 711px; 
- margin-top: 77px;
+ margin-top: 78px;
 }
 
 .result__video {
@@ -59,7 +60,6 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   min-height: 54px;
 }
 
@@ -91,7 +91,6 @@ ol {
   appearance: none;
   padding: 0;
   width: 225px;
-
 }
 
 .search-form__checkbox-list {
@@ -178,8 +177,7 @@ border: 1px solid;
 }
 
 .content__video-card-description-container {
-  max-width: 210px;
-  width: 100%;
+  width: 200px;
   overflow-wrap: break-word; 
 }
 
