@@ -39,15 +39,14 @@ ol {
 
 .content {
   display: flex;
+  align-items: flex-end;
   gap: 30px;
-  max-height: 534px;
   max-width: 1140px;
-  margin: 110px 30px;
+  margin: 113px auto;
 }
-
 .result {
  min-width: 711px; 
- margin-top: 78px;
+ margin-top: 77px;
 }
 
 .result__video {
@@ -91,6 +90,7 @@ ol {
   appearance: none;
   padding: 0;
   width: 225px;
+
 }
 
 .search-form__checkbox-list {
@@ -126,14 +126,18 @@ padding: 1px;
 border: 1px solid;
 }
 
+.content__details {
+  width: 100%;
+}
+
 .content__list {
   position: relative;
   max-height: 298px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  overflow: hidden auto;
-  scrollbar-width: thin;
+  overflow: auto;
+  /*scrollbar-width: thin;*/
 }
 
 .content__card-link {
@@ -148,6 +152,7 @@ border: 1px solid;
   display: flex;
   flex-direction: row;
   min-height: 107px;
+  width: 394px;
 }
 
 .result__video-container {
@@ -186,7 +191,6 @@ border: 1px solid;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  padding: 4px;
 }
 
 .content__video-card-description {
