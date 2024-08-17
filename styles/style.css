@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -42,7 +44,8 @@ ol {
   display: flex;
   gap: 30px;
   max-width: 1140px;
-  margin: 153px auto;
+  margin: auto 30px;
+  align-items: flex-end;
 }
 
 .result {
@@ -133,7 +136,7 @@ border: 1px solid;
 
 .content__list {
   position: relative;
-  max-height: 298px;
+  height: 298px;
   display: flex;
   flex-direction: column;
   gap: 30px;
