@@ -42,7 +42,8 @@ ol {
   align-items: flex-end;
   gap: 30px;
   max-width: 1140px;
-  margin: 130px auto;
+  padding-top: 133px;
+  margin: auto;
 }
 .result {
  min-width: 711px; 
@@ -137,7 +138,6 @@ border: 1px solid;
   flex-direction: column;
   gap: 30px;
   overflow: auto;
-  /*scrollbar-width: thin;*/
 }
 
 .content__card-link {
@@ -157,7 +157,7 @@ border: 1px solid;
 
 .result__video-container {
   position:relative;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   height: 386px;
 }
 
