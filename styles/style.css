@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  max-height: 800px;
 }
 
 h1,
@@ -43,6 +44,7 @@ ol {
   max-width: 1140px;
   margin: 153px auto;
 }
+
 .result {
  min-width: 711px; 
  margin-top: 77px;
