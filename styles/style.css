@@ -10,6 +10,7 @@ html {
 
 .page {
   display: flex;
+  justify-content: center;
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
@@ -18,7 +19,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  max-height: 800px;
+ /* max-height: 800px; */
 }
 
 h1,
@@ -44,7 +45,6 @@ ol {
   display: flex;
   gap: 30px;
   max-width: 1140px;
-  margin: auto 30px;
   align-items: flex-end;
 }
 
@@ -73,16 +73,6 @@ ol {
 
 .search-form__textfield {
   color: inherit;
-}
-
-.search-form__fieldset-title {
-  font-size: 18px;
-  line-height: 21.6px;
-  font-weight: normal;
-  padding-bottom: 5px;
-}
-
-.search-form__textfield {
   background-color: transparent;
   font-family: inherit;
   font-weight: inherit;
@@ -95,6 +85,13 @@ ol {
   padding: 0;
   width: 225px;
 
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: normal;
+  padding-bottom: 5px;
 }
 
 .search-form__checkbox-list {
@@ -124,10 +121,8 @@ ol {
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 content: "";
 background-color: #fff;
-width: 15px;
-height: 15px;
-padding: 1px;
-border: 1px solid;
+border: 1px solid #1b1919;
+outline: 1px solid #fff;
 }
 
 .content__details {
@@ -137,10 +132,19 @@ border: 1px solid;
 .content__list {
   position: relative;
   height: 298px;
+  min-width: 411px;
+ 
+ /*
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 30px;
+  /*Лучшим решением будет задать для класса элемента списка например отступ снизу для всех кроме последнего.*/
   overflow: auto;
+}
+
+.content__list-item:not(:last-child) {
+  padding-bottom: 30px;
 }
 
 .content__card-link {
@@ -155,7 +159,6 @@ border: 1px solid;
   display: flex;
   flex-direction: row;
   min-height: 107px;
-  width: 394px;
 }
 
 .result__video-container {
@@ -169,6 +172,8 @@ border: 1px solid;
   width: 194px;
   max-height: 103px;
   margin: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .title {
@@ -185,7 +190,7 @@ border: 1px solid;
 }
 
 .content__video-card-description-container {
-  width: 200px;
+  width: 205px;
   overflow-wrap: break-word; 
 }
 
@@ -194,6 +199,9 @@ border: 1px solid;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -257,7 +265,7 @@ border: 1px solid;
 
 .button:hover,
 .content__video-card-description-container:hover,
-.search-form__label:hover {
+.search-form__checkbox-list > .search-form__label:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 5%;
@@ -265,7 +273,8 @@ border: 1px solid;
 
 .button:active,
 .content__video-card:active,
-.content__video-card-description-container:active{
+.content__video-card-description-container:active,
+.content__card-link_current {
   background-color: #545050;
   text-decoration: none;
 }
