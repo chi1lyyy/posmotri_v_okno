@@ -19,7 +19,6 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
- /* max-height: 800px; */
 }
 
 h1,
@@ -50,7 +49,6 @@ ol {
 
 .result {
  min-width: 711px; 
- margin-top: 77px;
 }
 
 .result__video {
@@ -64,6 +62,7 @@ ol {
   display: flex;
   justify-content: space-between;
   min-height: 54px;
+  gap: 40px;
 }
 
 .search-form__fieldset {
@@ -132,14 +131,7 @@ outline: 1px solid #fff;
 .content__list {
   position: relative;
   height: 298px;
-  min-width: 411px;
- 
- /*
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 30px;
-  /*Лучшим решением будет задать для класса элемента списка например отступ снизу для всех кроме последнего.*/
+  width: 410px;
   overflow: auto;
 }
 
@@ -158,6 +150,7 @@ outline: 1px solid #fff;
 .content__video-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   min-height: 107px;
 }
 
@@ -171,9 +164,9 @@ outline: 1px solid #fff;
   display: block;
   width: 194px;
   max-height: 103px;
-  margin: auto;
   object-fit: cover;
   object-position: center;
+  align-self: center;
 }
 
 .title {
@@ -190,7 +183,7 @@ outline: 1px solid #fff;
 }
 
 .content__video-card-description-container {
-  width: 205px;
+  width: 200px;
   overflow-wrap: break-word; 
 }
 
@@ -202,6 +195,7 @@ outline: 1px solid #fff;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 200px;
 }
 
 .content__video-card-description {
@@ -209,7 +203,6 @@ outline: 1px solid #fff;
   font-size: 18px;
   font-weight: 400;
   line-height: 16px;
-  padding-left: 4px;
 }
 
 .visually-hidden {
@@ -223,10 +216,10 @@ outline: 1px solid #fff;
 }
 
 .button {
+  width: 100%;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21.6px;
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -235,17 +228,10 @@ outline: 1px solid #fff;
   cursor: url(../images/cursor.png), pointer;
 }
 
-.search-form__submit-button {
-  padding: 6px 73.5px;
-}
-
-.more-button {
-  width: 100%;
-}
-
 .search-form__textfield:focus,
 .button:focus,
 .content__list-item:focus,
+.content__card-link:focus,
 .search-form__label:focus {
   outline: none;
 }
